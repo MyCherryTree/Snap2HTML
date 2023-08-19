@@ -198,7 +198,8 @@ namespace Snap2HTML
 				openInBrowser = chkOpenOutput.Checked,
 				linkFiles = chkLinkFiles.Checked,
 				linkRoot = txtLinkRoot.Text,
-			};
+				searchPattern = txtSearchPattern.Text,
+            };
 			StartProcessing(settings);
 		}
 

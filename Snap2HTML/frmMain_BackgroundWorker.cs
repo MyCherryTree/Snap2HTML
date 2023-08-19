@@ -205,7 +205,8 @@ namespace Snap2HTML
 					List<string> files;
 					try
 					{
-						files = new List<string>( System.IO.Directory.GetFiles( dirName, "*.*", System.IO.SearchOption.TopDirectoryOnly ) );
+
+						files = new List<string>( System.IO.Directory.GetFiles( dirName, settings.searchPattern, System.IO.SearchOption.TopDirectoryOnly ) );
 					}
 					catch( Exception ex )
 					{
